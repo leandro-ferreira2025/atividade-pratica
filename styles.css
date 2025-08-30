@@ -1,0 +1,197 @@
+/* 
+   ESTILIZAÇÃO GLOBAL
+*/
+/* Define a fonte principal, remove margens e padding padrão, define cor de fundo e definindo um layout para o botão */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+button {
+    background-color: #35424a;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: #e8491d;
+}
+
+/* 
+   CABEÇALHO
+*/
+/* Define cor de fundo, cor do texto, alinhamento e padding do header */
+header {
+    background-color: #35424a;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* 
+   MENU DE NAVEGAÇÃO
+*/
+/* Define menu horizontal, sem marcadores e centralizado */
+.menu ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+
+/* Remove sublinhado dos links e define cor inicial */
+.menu a {
+    text-decoration: none;
+    color: #35424a;
+}
+
+/* Altera a cor do link ao passar o mouse */
+.menu a:hover {
+    color: #e8491d;
+}
+
+/* 
+   SEÇÃO PRINCIPAL
+*/
+/* Layout principal com flexbox, espaçamento e bordas arredondadas */
+.container-principal {
+    display: flex;
+    gap: 32px;
+    max-width: 1200px;
+    margin: 32px auto;
+    background: #f4f4f4;
+    border-radius: 10px;
+    padding: 24px;
+}
+
+/* Área de conteúdo principal com padding e fundo branco */
+.conteudo-principal {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    background-color: #ffffff;
+    margin-bottom: 60px;
+}
+
+/* Painel lateral com largura fixa, padding e alinhamento central */
+.painel-lateral {
+    text-align: center;
+    width: 260px;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 24px 16px;
+    flex-shrink: 0;
+}
+
+/* Título do painel lateral */
+.painel-lateral h3 {
+    margin: 12px;
+    color: #35424a;
+}
+
+/* Lista dentro do painel lateral sem marcadores */
+.painel-lateral ul {
+    list-style: none;
+    margin: 16px;
+    padding: 0;
+}
+
+/* Itens da lista com espaçamento inferior */
+.painel-lateral ul li {
+    margin-bottom: 8px;
+}
+
+/* Links do painel lateral com cor específica e sem sublinhado */
+.painel-lateral a {
+    color: #e8491d;
+    text-decoration: none;
+}
+
+/* Foto de perfil com formato circular e borda */
+#foto-perfil {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 16px;
+    border: 3px solid #35424a;
+}
+
+/* 
+   RESPONSIVIDADE
+*/
+@media (max-width: 800px) {
+    .container-principal {
+        flex-direction: column;
+        padding: 12px;
+    }
+
+    .painel-lateral {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/* 
+   CARDS DE PROJETOS
+*/
+/* Estilo de cartões com fundo branco, borda, sombra e padding */
+.card-projeto {
+    text-align: center;
+    background: #b4b0b0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 20px;
+}
+
+/* 
+   RODAPÉ
+*/
+/* Define fundo, cor do texto, alinhamento e padding do rodapé */
+.rodape {
+    background-color: #35424a;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+/* Links do rodapé com cor específica e sem sublinhado */
+.rodape a {
+    color: #e8491d;
+    text-decoration: none;
+}
+
+/* Lista do rodapé sem marcadores */
+.rodape ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Classe auxiliar para remover decoração de listas */
+.remover-decoracao {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* 
+   FORMULÁRIOS
+*/
+/* Formulário vertical com espaçamento entre campos e largura máxima */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 400px;
+    margin: 0 auto;
+}
